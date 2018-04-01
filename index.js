@@ -7,13 +7,13 @@ function nestedTarget(){
   return document.getElementById("nested").querySelector(".target");
 }
 
-function increaseRankBy(n){
+function increaseRankBy(){
 
   const lis = document.getElementById("app").querySelectorAll("ul.ranked-list li");
 
   for (var i = 0; i < lis.length; i++) {
     let int = lis[i].innerHTML;
-    lis[i] = (parseInt(int, 10) + n).toString();
+    lis[i] = (parseInt(int, 10) + 1).toString();
   }
 }
 
